@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 28</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Image Toggle Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="gallery-shell">
+        <div class="gallery-grid">
+            <section class="card city-card">
+                <div class="image-frame city-frame">
+                    <img src="night.png" alt="City skyline at night" id="mainImage" class="toggle-image city-image">
+                </div>
+                <div class="controls" aria-label="City view controls">
+                    <button id="cityDayBtn" class="toggle-btn" type="button" onclick="showDay()">Day</button>
+                    <button id="cityNightBtn" class="toggle-btn active" type="button" onclick="showNight()">Night</button>
+                </div>
+            </section>
 
-    <div class="container">
-        <img src="/image/night.png" id="mainImage">
-        
-
-        <br>
-        <button onclick="showDay()">Day</button>
-        <button onclick="showNight()">Night</button>
-    </div>
-
-    
-<!-- Burger Part start -->
-<div class="container">
-        <img src="images/burgerban.png" id="mainImage2">
-        <br>
-                <button onclick="showDay2()">Burger With Patty</button>
-        <button onclick="showNight2()">Bun</button>
-     </div>
-
-<!-- Burger Part End -->
+            <section class="card burger-card">
+                <div class="image-frame burger-frame">
+                    <img src="images/burgerban.png" alt="Burger bun" id="mainImage2" class="toggle-image burger-image">
+                </div>
+                <div class="controls" aria-label="Burger controls">
+                    <button id="burgerPattyBtn" class="toggle-btn active" type="button" onclick="showDay2()">With Patty</button>
+                    <button id="burgerBunBtn" class="toggle-btn" type="button" onclick="showNight2()">Bun</button>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
