@@ -41,13 +41,13 @@ const lightOffBtn = document.getElementById("lightOffBtn");
 
 function showLightOn() {
     if (!lightImage) return;
-    lightImage.src = "images/lighton.png";
+    lightImage.src = "images/lighton.png"; // আপনার অন-লাইটের ছবির সঠিক পাথ
     setActiveButton(lightOnBtn, [lightOffBtn]);
 }
 
 function showLightOff() {
     if (!lightImage) return;
-    lightImage.src = "images/lightoff.png"; 
+    lightImage.src = "images/lightoff.png"; // আপনার অফ-লাইটের ছবির সঠিক পাথ
     setActiveButton(lightOffBtn, [lightOnBtn]);
 }
 
