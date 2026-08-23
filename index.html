@@ -9,6 +9,7 @@
 <body>
     <main class="gallery-shell">
         <div class="gallery-grid">
+            <!-- ===========place============= -->
             <section class="card city-card">
                 <div class="image-frame city-frame">
                     <img src="night.png" alt="City skyline at night" id="mainImage" class="toggle-image city-image">
@@ -17,8 +18,8 @@
                     <button id="cityDayBtn" class="toggle-btn" type="button" onclick="showDay()">Day</button>
                     <button id="cityNightBtn" class="toggle-btn active" type="button" onclick="showNight()">Night</button>
                 </div>
+                  <!-- ===========burger============= -->
             </section>
-
             <section class="card burger-card">
                 <div class="image-frame burger-frame">
                     <img src="images/burgerban.png" alt="Burger bun" id="mainImage2" class="toggle-image burger-image">
@@ -26,6 +27,16 @@
                 <div class="controls" aria-label="Burger controls">
                     <button id="burgerPattyBtn" class="toggle-btn active" type="button" onclick="showDay2()">With Patty</button>
                     <button id="burgerBunBtn" class="toggle-btn" type="button" onclick="showNight2()">Bun</button>
+                </div>
+            </section>
+              <!-- ===========light============= -->
+            <section class="card light-card">
+                <div class="image-frame light-frame">
+                    <img src="images/lighton.png" alt="Light On" id="mainImage3" class="toggle-image light-image">
+                </div>
+                <div class="controls" aria-label="Light controls">
+                    <button id="lightOnBtn" class="toggle-btn active" type="button" onclick="showLightOn()">Light On</button>
+                    <button id="lightOffBtn" class="toggle-btn" type="button" onclick="showLightOff()">Light Off</button>
                 </div>
             </section>
         </div>

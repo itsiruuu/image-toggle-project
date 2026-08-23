@@ -125,3 +125,11 @@ body {
         width: 100%;
     }
 }
+.light-frame {
+    aspect-ratio: 16 / 10;
+    background: #0f172a;
+}
+
+.light-image {
+    object-fit: cover;
+}

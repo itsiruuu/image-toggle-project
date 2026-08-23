@@ -35,4 +35,19 @@ function showNight2() {
     setActiveButton(burgerBunBtn, [burgerPattyBtn]);
 }
 
+const lightImage = document.getElementById("mainImage3");
+const lightOnBtn = document.getElementById("lightOnBtn");
+const lightOffBtn = document.getElementById("lightOffBtn");
+
+function showLightOn() {
+    if (!lightImage) return;
+    lightImage.src = "images/lighton.png";
+    setActiveButton(lightOnBtn, [lightOffBtn]);
+}
+
+function showLightOff() {
+    if (!lightImage) return;
+    lightImage.src = "images/lightoff.png"; 
+    setActiveButton(lightOffBtn, [lightOnBtn]);
+}
 
